@@ -46,7 +46,7 @@ public class HelloControllerTest {
 		MvcResult mvcResult = mockMvc.perform(request).andExpect(status().isOk())
 				.andExpect(content().string("Hello Spring Cetus")).andReturn();
 
-		assertEquals(HttpStatus.OK, mvcResult.getResponse().getStatus());
-		// assertSame(mockResponse,mvcResult.getResponse());
+		assertEquals(HttpStatus.OK.value(), mvcResult.getResponse().getStatus());
+//		assertSame(mockResponse,mvcResult.getResponse());
 	}
 }
