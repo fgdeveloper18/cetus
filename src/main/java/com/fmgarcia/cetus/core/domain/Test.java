@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,6 +23,7 @@ public class Test implements Serializable {
 	/**
 	* 
 	*/
+	@Transient
 	private static final long serialVersionUID = -880180428856656335L;
 
 	@Id
